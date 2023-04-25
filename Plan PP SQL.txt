@@ -1,0 +1,55 @@
+MYSQL:
+
+database = BOUTIQUE
+
+table PRODUIT:
+ID int primary key auto_increment,
+NOM varchar(255),
+DESCRIPTION text,
+PRIX int,
+QUANTITE int,
+ID_CATEGORIE int;
+
+table CATEGORIE:
+ID int primary key auto_increment,
+NOM varchar(255)
+
+
+CATEGORIE:
++----+-------------------+
+| ID | Nom               |
++----+-------------------+
+|  1 | repliques_courtes |
+|  2 | repliques_longues |
+|  3 | accessoires       |
+|  4 | consommable       |
++----+-------------------+
+
+
+
+
+
+
+Python:
+
+class CRUDcategorie:
+
+#CRUD de la table categorie#
+	def CreateCategorie(Nom):
+	
+	def ReadCategorie():
+	
+	def UpdateCategorie(nom, condition, nouveauNom):
+	
+	def DeleteCategorie(nom):
+	
+	
+class CRUDproduit:
+#CRUD de la table Produit#
+	def CreateProduit(nom, description, prix, quantite, categorie):
+	
+	def ReadProduit():
+	
+	def UpdateProduit(colone, condition, nouvelleColone):
+	
+	def DeleteProduit(nom):
